@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {HeadTags} from './HeadTags';
+// import {HeadTags} from './HeadTags';
 const imageUrl = 'https://media.istockphoto.com/photos/hot-air-balloons-flying-over-the-botan-canyon-in-turkey-picture-id1297349747?b=1&k=20&m=1297349747&s=170667a&w=0&h=oH31fJty_4xWl_JQ4OIQWZKP8C6ji9Mz7L4XmEnbqRU=';
 const { href } = window.location;
 const FB_DOMAIN = 'https://facebook.com/sharer.php?u=';
@@ -15,7 +15,7 @@ const dataLink = 'https://fb-test-app-v1.herokuapp.com/';
 function App() {
   return (
     <div className="App">
-      <HeadTags />
+      {/*<HeadTags />*/}
       <div>
         <img src={imageUrl} alt="bg"/>
       </div>
