@@ -29,6 +29,10 @@ export const HeadTags = (props) => {
 				key="og:image"
 				content="https://res.cloudinary.com/doghotelua/image/upload/v1581456521/blog/108_nft7ng.jpg"
 			/>
+			<meta property="og:image:alt" content="some alt text" />
+			<meta property="og:image:type" content="image/jpeg" />
+			<meta property="og:image:width" content="400" />
+			<meta property="og:image:height" content="300" />
 		</Helmet>
 	);
 };
