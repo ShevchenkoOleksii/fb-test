@@ -2,7 +2,8 @@ import React from 'react';
 import Helmet from "react-helmet";
 
 export const HeadTags = (props) => {
-	const imageUrl = 'https://media.istockphoto.com/photos/hot-air-balloons-flying-over-the-botan-canyon-in-turkey-picture-id1297349747?b=1&k=20&m=1297349747&s=170667a&w=0&h=oH31fJty_4xWl_JQ4OIQWZKP8C6ji9Mz7L4XmEnbqRU=';
+	// const imageUrl = 'https://media.istockphoto.com/photos/hot-air-balloons-flying-over-the-botan-canyon-in-turkey-picture-id1297349747?b=1&k=20&m=1297349747&s=170667a&w=0&h=oH31fJty_4xWl_JQ4OIQWZKP8C6ji9Mz7L4XmEnbqRU=';
+	const imageUrl = 'https://res.cloudinary.com/doghotelua/image/upload/v1581456521/blog/108_nft7ng.jpg';
 	const {
 		title = "Portfolio - your name",
 		metaDescription = "default description",
@@ -26,7 +27,7 @@ export const HeadTags = (props) => {
 			<meta
 				property="og:image"
 				key="og:image"
-				content={imageUrl}
+				content="https://res.cloudinary.com/doghotelua/image/upload/v1581456521/blog/108_nft7ng.jpg"
 			/>
 		</Helmet>
 	);
