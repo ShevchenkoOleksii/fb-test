@@ -28,7 +28,7 @@ function App() {
         </a>
       </div>
       <iframe
-        src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ffb-test-app-v1.herokuapp.com%2F&layout=button_count&size=small&width=77&height=20&appId"
+        src={`https://www.facebook.com/plugins/share_button.php?href=${dataLink}&layout=button_count&size=small&width=77&height=20&appId`}
         width="77"
         height="20"
         scrolling="no"
@@ -72,7 +72,7 @@ function App() {
         data-href={dataLink}
         data-layout="button_count" data-size="small">
         <a target="_blank"
-           href={`https://www.facebook.com/sharer/sharer.php?u=${dataLink};src=sdkpreparse`}
+           href={`https://www.facebook.com/sharer/sharer.php?u=${dataLink}&amp;src=sdkpreparse`}
         >
           Поширити</a>
       </div>
