@@ -9,7 +9,8 @@ const openPopup = (link, e) => {
   e.preventDefault();
   window.open(link, 'newwindow', 'width=300, height=250');
 };
-
+// const dataLink = 'https://developers.facebook.com/docs/plugins/';
+const dataLink = 'https://fb-test-app-v1.herokuapp.com/';
 
 function App() {
   return (
@@ -25,6 +26,55 @@ function App() {
         >
           Share!
         </a>
+      </div>
+      <iframe
+        src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ffb-test-app-v1.herokuapp.com%2F&layout=button_count&size=small&width=77&height=20&appId"
+        width="77"
+        height="20"
+        scrolling="no"
+        frameBorder="0"
+        allowFullScreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      >
+      </iframe>
+      <iframe
+        src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fnotes-meneger-test.herokuapp.com%2Fapi%2Fauth&layout=button_count&size=small&width=77&height=20&appId"
+        width="77"
+        height="20"
+        scrolling="no"
+        frameBorder="0"
+        allowFullScreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      >
+      </iframe>
+      <iframe
+        src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&width=96&height=20&appId"
+        width="96"
+        height="20"
+        scrolling="no"
+        frameBorder="0"
+        allowFullScreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      >
+
+      </iframe>
+      <div
+        className="fb-share-button"
+        data-href="https://developers.facebook.com/docs/plugins/"
+        data-layout="button_count" data-size="small">
+        <a target="_blank"
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+        >
+          Поширити</a>
+      </div>
+      <div
+        className="fb-share-button"
+        data-href={dataLink}
+        data-layout="button_count" data-size="small">
+        <a target="_blank"
+           href={`https://www.facebook.com/sharer/sharer.php?u=${dataLink};src=sdkpreparse`}
+        >
+          Поширити</a>
       </div>
     </div>
   );
