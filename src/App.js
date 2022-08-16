@@ -37,6 +37,16 @@ function App() {
         >
           Поширити</a>
       </div>
+      <iframe
+        src={`https://www.facebook.com/plugins/share_button.php?href=${dataLink}&layout=button_count&size=small&width=77&height=20&appId`}
+        width="77"
+        height="20"
+        scrolling="no"
+        frameBorder="0"
+        allowFullScreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      >
+      </iframe>
     </div>
   );
 }
