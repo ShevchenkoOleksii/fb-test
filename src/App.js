@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Helmet } from 'react-helmet';
+
+import { HeadTags } from './HeadTags';
 
 const imageUrl = 'https://cdn.pixabay.com/photo/2015/05/31/15/08/blank-792125__340.jpg';
 const { href } = window.location;
@@ -15,12 +16,7 @@ const dataLink = 'https://fb-test-app-v1.herokuapp.com/';
 function App() {
   return (
     <div className="App">
-      <Helmet>
-        <meta property="og:url" content={href} />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Hello World!"/>
-        <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/05/31/15/08/blank-792125__340.jpg"/>
-      </Helmet>
+      <HeadTags />
       <div>
         <img src={imageUrl} alt="bg"/>
       </div>
