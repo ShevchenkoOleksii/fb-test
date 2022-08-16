@@ -11,20 +11,26 @@ export const HeadTags = (props) => {
 	} = props;
 	return (
 		<Helmet>
-			<meta charSet="UTF-8"/>
-			<meta name="viewport"
-						content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-			<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-			<title>{title}</title>
-			<meta property="og:title" content={title} />
-			<meta name="og:url" content="https://fb-test-app-v1.herokuapp.com/" />
-			<meta
-				property="og:image"
-				content={imageUrl} />
-			<meta property="og:type" content="website" />
-			<meta
-				property="og:description"
-				content={metaDescription} />
+			<meta name="og:title" content="Social Plugins - Documentation - Facebook for Developers"/>
+			<meta name="og:url" content="https://fb-test-app-v1.herokuapp.com/"/>
+			<meta name="og:image" content="https://cdn.pixabay.com/photo/2015/05/31/15/08/blank-792125__340.jpg"/>
+			<meta property="og:type" content="website"/>
+			<meta name="og:description"
+						content="The Facebook Social Plugins guide lists the Facebook Social Plugins available to allow your app to like, share, comment, and more."/>
+			{/*<meta charSet="UTF-8"/>*/}
+			{/*<meta name="viewport"*/}
+			{/*			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>*/}
+			{/*<meta http-equiv="X-UA-Compatible" content="ie=edge"/>*/}
+			{/*<title>{title}</title>*/}
+			{/*<meta property="og:title" content={title} />*/}
+			{/*<meta name="og:url" content="https://fb-test-app-v1.herokuapp.com/" />*/}
+			{/*<meta*/}
+			{/*	property="og:image"*/}
+			{/*	content={imageUrl} />*/}
+			{/*<meta property="og:type" content="website" />*/}
+			{/*<meta*/}
+			{/*	property="og:description"*/}
+			{/*	content={metaDescription} />*/}
 		</Helmet>
 	);
 };
